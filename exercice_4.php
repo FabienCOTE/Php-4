@@ -16,22 +16,22 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre deux nombres. La fonction doit retourner :<br />Le premier nombre est plus grand si le premier nombre est plus grand que le deuxième<br />Le premier nombre est plus petit si le premier nombre est plus petit que le deuxième<br />Les deux nombres sont identiques si les deux nombres sont égaux</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnInt($myIntOne, $myIntTwo) {
                     if ($myIntOne > $myIntTwo) {
                         return 'Le premier nombre est plus grand';
                     }
-
                     if ($myIntOne < $myIntTwo) {
                         return 'Le premier nombre est plus petit';
                     }
-
                     if ($myIntOne == $myIntTwo) {
                         return 'Les deux nombres sont identiques';
                     }
                 }
                 echo returnInt(50, 50);
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

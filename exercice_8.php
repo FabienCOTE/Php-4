@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 8</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre trois nombres et qui renvoit la somme de ces nombres.<br />Tous les paramètres doivent avoir une valeur par défaut.</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnSum($numberOne = 1, $numberTwo = 2, $numberThree = 3) {
                     return $numberOne + $numberTwo + $numberThree;
                 }
                 echo returnSum();
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

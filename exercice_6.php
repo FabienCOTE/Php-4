@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 6</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui prend trois paramètres : le nom, le prénom et l'âge d'une personne. Elle doit renvoyer une chaine de la forme :<br />"Bonjour" + nom + prénom + ",tu as" + age + "ans".</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnString($lastName, $firstName, $age) {
                     return 'Bonjour ' . $lastName . ' ' . $firstName . ', tu as ' . $age . ' ans.';
                 }
                 echo returnString('Côté', 'Fabien', 29);
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

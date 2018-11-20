@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 7</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -18,9 +18,10 @@ and open the template in the editor.
             <p>Gérer tous les cas.</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnResult($age, $gender) {
-                    if($gender == 'Femme') {
+                    if ($gender == 'Femme') {
                         $text = 'e';
                     }
 
@@ -31,7 +32,8 @@ and open the template in the editor.
                     }
                 }
                 echo returnResult(25, 'Femme');
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

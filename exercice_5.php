@@ -8,7 +8,7 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8" />
         <title>Exercice 5</title>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div>
@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre un nombre et une chaine de caractères et qui renvoit la concaténation de ces deux paramètres.</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnConcatenation($myInt, $myString) {
                     return $myInt . $myString;
                 }
                 echo returnConcatenation(29, ' ans');
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

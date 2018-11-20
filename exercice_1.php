@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui retourne true.</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnTrue() {
                     return true;
                 }
                 echo returnTrue();
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

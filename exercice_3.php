@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre deux chaines de caractères et qui revoit la concaténation de ces deux chaines</p>
         </div>
         <div>
-            <p><?php
+            <p>
+                <?php
                 function returnString($myStringOne, $myStringTwo) {
                     return $myStringOne . $myStringTwo;
                 }
                 echo returnString('Hello', ' World');
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>

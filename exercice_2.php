@@ -16,12 +16,14 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.</p>
         </div>
         <div>
-            <p><?php
-               function returnString($myString) {
+            <p>
+                <?php
+                function returnString($myString) {
                     return $myString;
                 }
                 echo returnString('Hello World !');
-            ?></p>
+                ?>
+            </p>
         </div>
     </body>
 </html>
