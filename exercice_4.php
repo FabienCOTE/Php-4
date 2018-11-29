@@ -1,9 +1,17 @@
+<?php
+function returnInt($myIntOne, $myIntTwo) {
+    if ($myIntOne > $myIntTwo) {
+        return 'Le premier nombre est plus grand';
+    }
+    if ($myIntOne < $myIntTwo) {
+        return 'Le premier nombre est plus petit';
+    }
+    if ($myIntOne == $myIntTwo) {
+        return 'Les deux nombres sont identiques';
+    }
+}
+?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html  lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -16,22 +24,7 @@ and open the template in the editor.
             <p>Faire une fonction qui prend en paramètre deux nombres. La fonction doit retourner :<br />Le premier nombre est plus grand si le premier nombre est plus grand que le deuxième<br />Le premier nombre est plus petit si le premier nombre est plus petit que le deuxième<br />Les deux nombres sont identiques si les deux nombres sont égaux</p>
         </div>
         <div>
-            <p>
-                <?php
-                function returnInt($myIntOne, $myIntTwo) {
-                    if ($myIntOne > $myIntTwo) {
-                        return 'Le premier nombre est plus grand';
-                    }
-                    if ($myIntOne < $myIntTwo) {
-                        return 'Le premier nombre est plus petit';
-                    }
-                    if ($myIntOne == $myIntTwo) {
-                        return 'Les deux nombres sont identiques';
-                    }
-                }
-                echo returnInt(50, 50);
-                ?>
-            </p>
+            <p><?= returnInt(50, 50); ?></p>
         </div>
     </body>
 </html>

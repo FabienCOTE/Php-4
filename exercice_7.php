@@ -1,9 +1,16 @@
+<?php
+function returnResult($age, $gender) {
+    if ($gender == 'Femme') {
+        $text = 'e';
+    }
+    if ($age >= 18 && ($gender == 'Homme' || $gender == 'Femme')) {
+        return 'Vous êtes un' . $text . ' ' . strtolower($gender) . ' et vous êtes majeur' . $text;
+    } else {
+        return 'Vous êtes un' . $text . ' ' . strtolower($gender) . ' et vous êtes mineur' . $text;
+    }
+}
+?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
@@ -18,22 +25,7 @@ and open the template in the editor.
             <p>Gérer tous les cas.</p>
         </div>
         <div>
-            <p>
-                <?php
-                function returnResult($age, $gender) {
-                    if ($gender == 'Femme') {
-                        $text = 'e';
-                    }
-
-                    if ($age >= 18 && ($gender == 'Homme' || $gender == 'Femme')) {
-                        return 'Vous êtes un' . $text . ' ' . strtolower($gender) . ' et vous êtes majeur' . $text;
-                    } else {
-                        return 'Vous êtes un' . $text . ' ' . strtolower($gender) . ' et vous êtes mineur' . $text;
-                    }
-                }
-                echo returnResult(25, 'Femme');
-                ?>
-            </p>
+            <p><?= returnResult(25, 'Femme'); ?></p>
         </div>
     </body>
 </html>
